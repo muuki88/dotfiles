@@ -1,0 +1,100 @@
+[user]
+	name = Nepomuk Seiler
+	email = nepomuk.seiler@mukis.de
+[core]
+    excludesfile = /home/muki/Dokumente/DEVELOPMENT/.gitignore_global
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[push]
+	default = tracking
+[pull]
+    ff-only = 1
+[apply]
+    whitespace = fix	
+[diff]
+	algorithm = patience
+[alias]
+    cr = clone --recursive
+    st = status -sb
+    co = checkout
+    ci = commit -v
+    cl = clean -df
+
+    aa = add --all
+    au = add -u
+    a  = add
+    ar = !sh -c 'git add .' -c 'git ls-files --deleted | xargs git rm'
+
+    l  = log --graph --decorate --no-merges --pretty=format:'%h - %an, %ar : %s'
+    ll = log --graph --oneline --decorate --no-merges --name-status
+    lp = log --abbrev-commit --date=relative -p
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    la = !git l --all
+
+    ss = submodule status
+    su = submodule update --init --recursive
+
+    pp = !git pull --rebase && git push
+    pf = pull --ff-only
+    pr = pull --rebase
+    ps = push
+    pm = push origin master
+    up = "!git remote update -p; git merge --ff-only @{u}"
+
+    revert = git checkout HEAD^ --
+
+    di = diff
+    dc = diff --cached
+    rc = rm -r --cached
+    h  = !git head
+    r  = !git --no-pager 1 -20
+    ra = !git r --all
+    ff = merge --ff-only
+    fa = fetch --all
+    head = !git 1 -1
+    amend = commit --amend
+    gnc = goodness --cached
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    incoming = log --oneline origin/master ^master
+    outgoing = log --oneline master ^origin/master
+    upstream = !sh -c 'git branch --set-upstream-to `git rev-parse --abbrev-ref HEAD` origin/`git rev-parse --abbrev-ref HEAD`'
+    graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    changes = log --oneline --reverse
+    rank = shortlog -sn --no-merges
+    branchlog = log master..HEAD
+    branchdiff = diff master...HEAD
+    branchreview = log -p master..HEAD
+    hub = !hub
+    dashboard = "!f() { for branch in $(git branch -a | cut -c 3-); do if [ ! $branch = '->' ]; then branches=\"$branches$(git log --no-walk --pretty=format:\"%ct (%cr)\t%Cgreen$branch%Creset %Cblue%an%Creset\" $branch)\\n\"; fi; done; echo -e $branches | sort -rk1 | cut -c 12-; }; f"
+    
+    # Found at http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+    ready = rebase -i @{u}
+    assume   = update-index --assume-unchanged
+    unassume = update-index --no-assume-unchanged
+    assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+    snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+    ours   = "!f() { git checkout --ours $@ && git add $@; }; f"
+    theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+    standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author 'Nepomuk Seiler'
+
+[core]
+    excludesfile = ~/.gitignore_global
+    whitespace = trailing-space,space-before-tab,indent-with-non-tab
+    pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+	trustctime = false

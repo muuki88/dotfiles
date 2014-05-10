@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# zsh/bash configuration
+!.zshrc
+!.bash_aliases
+!.gitconfig
+!.gitignore_global
+!.gitignore
+
+# maven
+!.m2/
+!.m2/settings.xml
+
