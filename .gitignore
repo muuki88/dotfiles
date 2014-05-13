@@ -12,3 +12,8 @@
 !.m2/
 !.m2/settings.xml
 
+# sbt
+!.sbt/
+!.sbt/0.13/global.sbt
+!.sbt/0.13/plugins/
+!.sbt/0.13/plugins/plugins.sbt
