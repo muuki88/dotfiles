@@ -4,5 +4,6 @@
 .settings
 bin
 target
+.cache
 
 # REST
