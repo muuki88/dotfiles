@@ -4,7 +4,8 @@
 .settings
 bin
 bin/
-target
+target/
 .cache
 
-# REST
+# sbt
+project/target
