@@ -2,7 +2,10 @@
 	name = Nepomuk Seiler
 	email = nepomuk.seiler@mukis.de
 [core]
-    excludesfile = /home/muki/Dokumente/DEVELOPMENT/.gitignore_global
+    excludesfile = ~/.gitignore_global
+    whitespace = trailing-space,space-before-tab,indent-with-non-tab
+    pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
+	trustctime = false
 [color]
 	ui = true
 	status = auto
@@ -93,8 +96,3 @@
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
     standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author 'Nepomuk Seiler'
 
-[core]
-    excludesfile = ~/.gitignore_global
-    whitespace = trailing-space,space-before-tab,indent-with-non-tab
-    pretty = format:%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset
-	trustctime = false

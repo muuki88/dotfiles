@@ -44,6 +44,7 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 ## Aliases
 
 alias python-webserver='python3 -m  http.server 8888'
+#alias docker-rm-none=docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
 
 #################
 ## Shell

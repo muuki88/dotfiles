@@ -6,6 +6,7 @@ bin
 bin/
 target/
 .cache
+.worksheet/
 
 # sbt
-project/target
+project/target/

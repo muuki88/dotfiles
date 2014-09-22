@@ -6,3 +6,5 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-pgp" % "0.8.3")
 
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.1.6")
 
+addSbtPlugin("com.github.alexarchambault" %% "sbt-notebook" % "0.1.1")
+
