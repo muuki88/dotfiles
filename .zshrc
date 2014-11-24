@@ -45,12 +45,13 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 alias python-webserver='python3 -m  http.server 8888'
 #alias docker-rm-none=docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
+alias scala='scala -Dscala.color'
 
 #################
 ## Shell
 #################
 
-export PATH=/home/muki/Development/shell/:$PATH
+export PATH=/home/muki/Development/bin/:$PATH
 
 ## Java Home
 # export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
@@ -98,21 +99,10 @@ export PATH=$SCALA_HOME/bin:$PATH
 export MAVEN_HOME=/home/muki/Development/target_platform/apache/apache-maven
 export PATH=$MAVEN_HOME/bin:$PATH
 
-## Apache Axis2 Home
-export AXIS2_HOME=/home/muki/Development/target_platform/apache/axis2-1.6.2
-# export PATH=$PATH:$AXIS2_HOME/bin
-
-## Apache CFX Home
-export CFX_HOME=/home/muki/Development/target_platform/apache/apache-cxf
-export PATH=$PATH:$CFX_HOME/bin
 
 ## Apache Felix
 export FELIX_HOME=/home/muki/Development/target_platform/apache/apache-felix
 export PATH=$PATH:$FELIX_HOME/bin
-
-## Apaceh Karaf
-export KARAF_HOME=/home/muki/Development/target_platform/apache/apache-karaf
-export PATH=$PATH:$KARAF_HOME/bin
 
 #########################################
 ####             Build               ####
@@ -143,3 +133,4 @@ export MONGO_HOME=/home/muki/Development/target_platform/databases/mongodb
 export PATH=$PATH:$MONGO_HOME/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+

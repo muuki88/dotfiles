@@ -9,3 +9,6 @@ EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource
 EclipseKeys.withSource := true
 
 // EclipseKeys.eclipseOutput := Some("target/scala_version/classes")
+
+addSbtPlugin("com.scalapenos" % "sbt-prompt" % "0.2.1")
+
