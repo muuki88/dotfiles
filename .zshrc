@@ -44,14 +44,26 @@ zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 ## Aliases
 
 alias python-webserver='python3 -m  http.server 8888'
-#alias docker-rm-none=docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
 alias scala='scala -Dscala.color'
+
+docker-rm-containers() {
+  #docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs --no-run-if-empty docker rm
+  docker rm $(docker ps -a -q)
+}
+
+docker-rm-images() {
+  docker rmi $(docker images -q)
+}
+
 
 #################
 ## Shell
 #################
 
 export PATH=/home/muki/Development/bin/:$PATH
+
+## Haskell
+export PATH=/home/muki/.cabal/bin/:$PATH
 
 ## Java Home
 # export JAVA_HOME=/usr/lib/jvm/jdk1.7.0
