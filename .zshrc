@@ -60,6 +60,7 @@ docker-rm-images() {
 ## Shell
 #################
 
+export PATH=/home/muki/bin/:$PATH
 export PATH=/home/muki/Development/bin/:$PATH
 
 ## Haskell
@@ -102,6 +103,10 @@ export PATH=$PLAY_HOME:$PATH
 
 export SCALA_HOME=/home/muki/Development/target_platform/typesafe/scala/scala
 export PATH=$SCALA_HOME/bin:$PATH
+
+## SBT
+
+export SBT_OPTS="$SBT_OPTS -Dsbt.jse.engineType=Node"
 
 #########################################
 ####             Apache              ####
@@ -146,3 +151,6 @@ export PATH=$PATH:$MONGO_HOME/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

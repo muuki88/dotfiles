@@ -13,3 +13,5 @@ addSbtPlugin("com.scalapenos" %% "sbt-prompt" % "0.2.1")
 addSbtPlugin("com.37pieces" %% "sbt-meow" % "0.1")
 
 addSbtPlugin("com.orrsella" %% "sbt-stats" % "1.0.5")
+
+addSbtPlugin("com.eed3si9n" % "sbt-sh" % "0.1.0")
