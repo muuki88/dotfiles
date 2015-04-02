@@ -8,6 +8,9 @@
 !.gitignore_global
 !.gitignore
 
+!.oh-my-zsh/custom/travis.zsh
+!.oh-my-zsh/custom/docker.zsh
+
 # maven
 !.m2/
 !.m2/settings.xml
