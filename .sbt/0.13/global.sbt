@@ -13,4 +13,6 @@ EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource //
 
 EclipseKeys.withSource := true
 
+EclipseKeys.withBundledScalaContainers := false
+
 // EclipseKeys.eclipseOutput := Some("target/scala_version/classes")
