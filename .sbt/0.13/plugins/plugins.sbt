@@ -15,3 +15,5 @@ addSbtPlugin("com.eed3si9n" % "sbt-sh" % "0.1.0")
 addSbtPlugin("org.programmiersportgruppe.sbt" %% "tabulartestreporter" % "1.4.0")
 
 addSbtPlugin("com.dwijnand.sbtprojectgraph" % "sbt-project-graph" % "0.1.0")
+
+addSbtPlugin("org.scala-sbt" % "sbt-duplicates-finder" % "0.7.0")
