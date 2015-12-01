@@ -6,8 +6,6 @@ resolvers += Resolver.url(
     url("http://dl.bintray.com/thricejamie/sbt-plugins"))(
         Resolver.ivyStylePatterns)
 
-net.virtualvoid.sbt.graph.Plugin.graphSettings
-
 // https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
 //import com.typesafe.sbteclipse.core.EclipsePlugin._
 //EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource // + EclipseCreateSrc.Managed
@@ -17,3 +15,5 @@ net.virtualvoid.sbt.graph.Plugin.graphSettings
 // EclipseKeys.withBundledScalaContainers := false
 
 // EclipseKeys.eclipseOutput := Some("target/scala_version/classes")
+
+cancelable in Global := true

@@ -47,7 +47,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras github ubuntu chuck colorize emoji-clock sbt jump)
+plugins=(git git-extras github ubuntu chuck colorize emoji-clock sbt jump zsh-syntax-highlighting)
 
 # User configuration
 
@@ -80,3 +80,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
