@@ -10,10 +10,14 @@ resolvers += Resolver.url(
 //import com.typesafe.sbteclipse.core.EclipsePlugin._
 //EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource // + EclipseCreateSrc.Managed
 
-//EclipseKeys.withSource := true
+// EclipseKeys.withSource := true
 
 // EclipseKeys.withBundledScalaContainers := false
 
 // EclipseKeys.eclipseOutput := Some("target/scala_version/classes")
 
 cancelable in Global := true
+
+libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.5.1" % "test" cross CrossVersion.full
+
+initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
