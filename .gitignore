@@ -11,6 +11,9 @@
 !.oh-my-zsh/custom/travis.zsh
 !.oh-my-zsh/custom/docker.zsh
 
+# other configs
+!.tmux.conf
+
 # maven
 !.m2/
 !.m2/settings.xml
