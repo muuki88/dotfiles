@@ -47,9 +47,12 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras github ubuntu chuck colorize emoji-clock sbt jump zsh-syntax-highlighting)
+plugins=(git git-extras github ubuntu chuck colorize sbt jump zsh-syntax-highlighting)
 
 # User configuration
+
+# completions
+fpath=(/home/muki/.zsh $fpath)
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/muki/bin"
 # export MANPATH="/usr/local/man:$MANPATH"

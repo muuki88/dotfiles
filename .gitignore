@@ -3,6 +3,7 @@
 
 # zsh/bash configuration
 !.zshrc
+!.zsh
 !.bash_aliases
 !.gitconfig
 !.gitignore_global
