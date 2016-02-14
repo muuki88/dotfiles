@@ -1,6 +1,9 @@
 # Ignore everything
 *
 
+# setup
+!setup.sh
+
 # zsh/bash configuration
 !.zshrc
 !.zsh
