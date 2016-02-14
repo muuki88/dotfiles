@@ -11,3 +11,11 @@ cancelable in Global := true
 libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.5.1" % "test" cross CrossVersion.full
 
 initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
+
+// for generating fresh sbt projects
+import de.heikoseeberger.sbtfresh.FreshPlugin.autoImport._
+freshAuthor       := "Nepomuk Seiler"
+freshName         := "muki-project"
+freshOrganization := "de.mukis"
+freshSetUpGit     := true
+

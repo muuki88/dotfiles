@@ -19,3 +19,7 @@ addSbtPlugin("org.scala-sbt" % "sbt-duplicates-finder" % "0.7.0")
 addSbtPlugin("com.eed3si9n" % "sbt-dirty-money" % "0.1.0")
 
 addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")
+
+addSbtPlugin("org.ensime" % "ensime-sbt" % "0.3.2")
+
+addSbtPlugin("de.heikoseeberger" % "sbt-fresh" % "0.2.3")
