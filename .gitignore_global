@@ -10,8 +10,7 @@ target/
 
 # sbt
 project/target/
-.ensime-cache/
-.ensime
+.ensime*
 
 # haskell
 .stack-work/
