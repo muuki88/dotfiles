@@ -1,6 +1,7 @@
 [user]
 	name = Nepomuk Seiler
 	email = nepomuk.seiler@mukis.de
+	signingkey = 340E30A7
 [core]
     excludesfile = ~/.gitignore_global
     whitespace = trailing-space,space-before-tab,indent-with-non-tab

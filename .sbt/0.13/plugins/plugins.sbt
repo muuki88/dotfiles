@@ -1,7 +1,5 @@
 addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.0")
 
-addSbtPlugin("com.jsuereth" % "sbt-pgp" % "1.0.0")
-
 addSbtPlugin("com.timushev.sbt" % "sbt-updates" % "0.1.6")
 
 addSbtPlugin("com.scalapenos" %% "sbt-prompt" % "0.2.1")
