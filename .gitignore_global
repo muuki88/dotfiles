@@ -8,6 +8,10 @@ target/
 .cache
 .worksheet/
 
+# intellij
+.idea/
+main.iml
+
 # sbt
 project/target/
 .ensime*
