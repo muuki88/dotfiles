@@ -1,4 +1,5 @@
 //https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse
+/*
 import com.typesafe.sbteclipse.core.EclipsePlugin._
 EclipseKeys.createSrc := EclipseCreateSrc.Default + EclipseCreateSrc.Resource // + EclipseCreateSrc.Managed
 
@@ -12,3 +13,5 @@ EclipseKeys.eclipseOutput := {
   }
   Some(s"target/scala-$version/classes")
 }
+*/
+

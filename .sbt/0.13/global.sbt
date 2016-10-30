@@ -8,7 +8,7 @@ resolvers += Resolver.url(
 
 cancelable in Global := true
 
-libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.5.1" % "test" cross CrossVersion.full
+libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.7.8" % "test" cross CrossVersion.full
 
 initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
 
