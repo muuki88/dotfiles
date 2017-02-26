@@ -97,3 +97,5 @@
     theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
     standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since yesterday --author 'Nepomuk Seiler'
 
+[commit]
+	gpgsign = true
