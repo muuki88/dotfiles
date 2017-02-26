@@ -47,7 +47,7 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras github ubuntu chuck colorize sbt jump zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git git-extras ubuntu chuck colorize sbt jump zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
@@ -86,3 +86,8 @@ source $ZSH/oh-my-zsh.sh
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Terminix
+if [[ $TERMINIX_ID ]]; then
+  source /etc/profile.d/vte.sh
+fi
