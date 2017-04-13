@@ -4,7 +4,7 @@ resolvers += Resolver.url("bintray-thricejamie-sbt-plugins", url("http://dl.bint
 
 cancelable in Global := true
 
-libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.7.8" % "test" cross CrossVersion.full
+libraryDependencies += "com.lihaoyi" % "ammonite-repl" % "0.8.2" % "test" cross CrossVersion.full
 initialCommands in (Test, console) := """ammonite.repl.Main.run("")"""
 
 // for generating fresh sbt projects

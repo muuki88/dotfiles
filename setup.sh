@@ -1,7 +1,7 @@
 #!./bin/bash
 
 echo ">> install essentials"
-sudo apt-get install -y zsh git clipit unity-tweak-tool meld libdvd-pkg gimp
+sudo apt-get install -y zsh git clipit unity-tweak-tool meld libdvd-pkg gimp sound-juicer ubuntu-restricted-extras
 
 echo ">> install packaging tools for native-packager development"
 sudo apt-get install -y rpm dpkg-sig
@@ -104,3 +104,7 @@ echo "install dropbox"
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
 sudo dpkg -i dropbox_2015.10.28_amd64.deb
 rm dropbox_2015.10.28_amd64.deb
+
+# ruby gems for utility tools
+sudo gem install rake
+sudo gem install github_changelog_generator
