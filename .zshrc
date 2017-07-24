@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-### Terminix
-if [[ $TERMINIX_ID ]]; then
+### Tilix
+if [[ $TILIX_ID ]]; then
   source /etc/profile.d/vte.sh
 fi
