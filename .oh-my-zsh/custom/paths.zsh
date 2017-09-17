@@ -4,8 +4,11 @@ export JDK_HOME
 
 # Haskell
 export BIN_HOME="/home/muki/.local/bin"
-PATH=$BIN_HOME:$PATH
+export PATH=$BIN_HOME:$PATH
 
 # Ruby
 GEM_HOME="/home/muki/.gems"
 export GEM_HOME
+
+# Travis
+export PATH=$GEM_HOME/bin:$PATH

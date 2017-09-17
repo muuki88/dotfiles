@@ -91,3 +91,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 if [[ $TILIX_ID ]]; then
   source /etc/profile.d/vte.sh
 fi
+
+# added by travis gem
+[ -f /home/muki/.travis/travis.sh ] && source /home/muki/.travis/travis.sh
