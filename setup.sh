@@ -1,7 +1,8 @@
-#!./bin/bash
+#!/bin/bash
 
 echo ">> install essentials"
 sudo apt-get install -y zsh git clipit unity-tweak-tool meld libdvd-pkg gimp sound-juicer ubuntu-restricted-extras
+chsh
 
 echo ">> install packaging tools for native-packager development"
 sudo apt-get install -y rpm dpkg-sig
@@ -67,6 +68,10 @@ echo "All repos added. Update apt-get"
 echo "-------------------------------"
 sudo apt-get update
 
+echo ">> install tilix"
+sudo apt-get install tilix
+sudo ln -s /etc/profile.d/vte-2.91.sh /etc/profile.d/vte.sh
+
 echo ">> install java"
 sudo apt-get install -y oracle-java8-installer
 
@@ -92,7 +97,9 @@ echo ">> install atom"
 sudo apt-get -y install atom
 
 echo ">> install nuvola player"
-sudo apt-get -y install nuvolaplayer3 nuvolaplayer3-soundcloud nuvolaplayer3-youtube nuvolaplayer3-plex nuvolaplayer3-google-play-music
+# TODO replace with flatpak
+# sudo apt-get -y install nuvolaplayer3 nuvolaplayer3-soundcloud nuvolaplayer3-youtube nuvolaplayer3-plex nuvolaplayer3-google-play-music
+
 
 
 # sudo apt-add-repository ppa:diodon-team/stable
@@ -100,11 +107,12 @@ sudo apt-get -y install nuvolaplayer3 nuvolaplayer3-soundcloud nuvolaplayer3-you
 # sudo apt-get install diodon unity-scope-diodon
 
 
+# ruby gems for utility tools
+sudo gem install rake
+sudo gem install github_changelog_generator
+
+
 echo "install dropbox"
 wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
 sudo dpkg -i dropbox_2015.10.28_amd64.deb
 rm dropbox_2015.10.28_amd64.deb
-
-# ruby gems for utility tools
-sudo gem install rake
-sudo gem install github_changelog_generator
