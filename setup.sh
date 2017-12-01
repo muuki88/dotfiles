@@ -108,11 +108,9 @@ echo ">> install nuvola player"
 
 
 # ruby gems for utility tools
+sudo apt-get install ruby ruby-dev
 sudo gem install rake
 sudo gem install github_changelog_generator
+sudo gem install bundle
 
 
-echo "install dropbox"
-wget https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2015.10.28_amd64.deb
-sudo dpkg -i dropbox_2015.10.28_amd64.deb
-rm dropbox_2015.10.28_amd64.deb
