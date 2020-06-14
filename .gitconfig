@@ -99,3 +99,6 @@
 
 [commit]
 	gpgsign = true
+[gpg]
+	programm = gpg
+	program = gpg
